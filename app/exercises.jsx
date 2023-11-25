@@ -16,8 +16,8 @@ const Exercises = () => {
   const router = useRouter();
   const [exercises, setexercises] = useState([]);
   const item = useLocalSearchParams();
-  console.log("Data:", item);
-  console.log("DataPass:", exercises);
+  //console.log("Data:", item);
+  //console.log("DataPass:", exercises);
 
   useEffect(() => {
     if (item) getExercises(item.name);
